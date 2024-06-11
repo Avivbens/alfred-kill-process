@@ -12,7 +12,6 @@ ${homepage}
  */
 module.exports = {
     bundlerOptions: {
-        minify: false,
         esmHelpers: true,
         outputFormat: 'esm',
     },
