@@ -1,7 +1,7 @@
 {
-    "name": "REPO-NAME",
+    "name": "alfred-kill-process",
     "version": "0.0.1",
-    "description": "TODO",
+    "description": "Efficiently search and kill processes and ports",
     "keywords": [
         "alfred",
         "workflow",
@@ -10,10 +10,10 @@
         "search",
         "multi-profile"
     ],
-    "homepage": "https://github.com/Avivbens/REPO-NAME",
+    "homepage": "https://github.com/Avivbens/alfred-kill-process",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Avivbens/REPO-NAME.git"
+        "url": "git+https://github.com/Avivbens/alfred-kill-process.git"
     },
     "license": "MIT",
     "author": {
