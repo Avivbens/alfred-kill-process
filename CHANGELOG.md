@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Avivbens/alfred-kill-process/compare/v1.2.0...v1.2.1) (2024-06-11)
+
+
+### Bug Fixes
+
+* drop `minify` from `false` ([b5a99a1](https://github.com/Avivbens/alfred-kill-process/commit/b5a99a14a1ee0964f2f9291644ff0f2c12267244))
+
 # [1.2.0](https://github.com/Avivbens/alfred-kill-process/compare/v1.1.0...v1.2.0) (2024-06-11)
 
 
