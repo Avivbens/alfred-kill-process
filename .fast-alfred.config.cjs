@@ -1,7 +1,7 @@
 const { author, description, homepage } = require('./package.json')
 
 const README = `
-Search across your OS processes by name, PID or path - and kill them if needed.
+Search across your OS processes by name, port, PID or path - and kill them if needed.
 
 See the workflow codebase in here:
 ${homepage}
