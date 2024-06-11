@@ -1,6 +1,6 @@
 {
     "name": "alfred-kill-process",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Efficiently search and kill processes on your Mac",
     "keywords": [
         "alfred",
