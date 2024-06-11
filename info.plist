@@ -8,6 +8,8 @@
     <string>Tools</string>
     <key>connections</key>
     <dict>
+      <key>14799482-DEFB-419D-8A33-CE6F4B12614B</key>
+      <array></array>
       <key>8A785DFD-30FA-43E2-BF07-9B1B46F29B63</key>
       <array>
         <dict>
@@ -18,7 +20,7 @@
           <key>modifiersubtext</key>
           <string></string>
           <key>vitoclose</key>
-          <false></false>
+          <true></true>
         </dict>
       </array>
       <key>CE84ED38-CD11-4B81-9E07-91C9D10EEE3C</key>
@@ -31,9 +33,11 @@
           <key>modifiersubtext</key>
           <string></string>
           <key>vitoclose</key>
-          <false></false>
+          <true></true>
         </dict>
       </array>
+      <key>FD52D6DE-838E-4CEF-9D97-F47BAC0D8F71</key>
+      <array></array>
     </dict>
     <key>createdby</key>
     <string>Aviv Ben Shahar</string>
@@ -176,7 +180,7 @@
           <key>escaping</key>
           <integer>102</integer>
           <key>script</key>
-          <string>kill -9 "$1"</string>
+          <string>kill -9 "$1" || sudo kill -9 "$1"</string>
           <key>scriptargtype</key>
           <integer>1</integer>
           <key>scriptfile</key>
@@ -204,14 +208,14 @@ https://github.com/Avivbens/alfred-kill-process</string>
         <key>xpos</key>
         <integer>420</integer>
         <key>ypos</key>
-        <integer>195</integer>
+        <integer>240</integer>
       </dict>
       <key>8A785DFD-30FA-43E2-BF07-9B1B46F29B63</key>
       <dict>
         <key>xpos</key>
         <integer>65</integer>
         <key>ypos</key>
-        <integer>195</integer>
+        <integer>240</integer>
       </dict>
       <key>CE84ED38-CD11-4B81-9E07-91C9D10EEE3C</key>
       <dict>
