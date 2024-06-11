@@ -1,7 +1,7 @@
 const { author, description, homepage } = require('./package.json')
 
 const README = `
-Search across your OS processes by name, port, PID or path - and kill them if needed.
+Search across your OS processes by name, PID or path - and kill them if needed.
 
 See the workflow codebase in here:
 ${homepage}
@@ -11,10 +11,14 @@ ${homepage}
  * @type {import('fast-alfred').FastAlfredConfig}
  */
 module.exports = {
-    bundlerOptions: {},
+    bundlerOptions: {
+        minify: false,
+        esmHelpers: true,
+        outputFormat: 'esm',
+    },
     workflowMetadata: {
-        name: 'Search Bookmarks',
-        // category: 'Internet',
+        name: 'Kill Process',
+        category: 'Tools',
         createdby: author.name,
         webaddress: homepage,
         description,

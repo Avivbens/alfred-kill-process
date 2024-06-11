@@ -1,7 +1,7 @@
 {
     "name": "alfred-kill-process",
     "version": "0.0.1",
-    "description": "Efficiently search and kill processes and ports",
+    "description": "Efficiently search and kill processes on your Mac",
     "keywords": [
         "alfred",
         "workflow",
@@ -26,6 +26,7 @@
             "email": "avivbens87@gmail.com"
         }
     ],
+    "type": "module",
     "scripts": {
         "prebuild": "rm -rf ./dist",
         "build": "tsc -p tsconfig.json && tsc-alias -p tsconfig.json",
@@ -37,7 +38,9 @@
         "test": "jest"
     },
     "dependencies": {
-        "fast-alfred": "^2.1.1"
+        "fast-alfred": "^2.1.1",
+        "fuse.js": "^7.0.0",
+        "ps-list": "^8.1.1"
     },
     "devDependencies": {
         "@commitlint/cli": "^19.3.0",

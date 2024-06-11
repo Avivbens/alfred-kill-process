@@ -14,13 +14,13 @@
 
 ## Description
 
-Alfred workflow to kill a process by name, port, PID or path.
+Alfred workflow to kill a process by name, PID or path.
 
 ### Fuzzy Search
 
 We support fuzzy search :ninja:
 
-You can search with partial names, ports, PIDs or paths - we will find the process for you :sparkles:
+You can search with partial names, PIDs or paths - we will find the process for you :sparkles:
 
 ### Install via GitHub Releases :sparkles:
 
@@ -34,5 +34,5 @@ open ~/Desktop/alfred-kill-process.alfredworkflow
 
 ## Usage
 
--   `!` keyword to `kill` a process by name, port, PID or path.
+-   `!` keyword to `kill` a process by name, PID or path.
 -   `!!` keyword to `kill -9`, same as above.
