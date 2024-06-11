@@ -29,7 +29,7 @@ import { searchProcess } from '@services/search.service.js'
 
         const sliced = items.slice(0, sliceAmount)
 
-        alfredClient.output({ items: sliced })
+        alfredClient.output({ items: sliced, rerun: 1 })
     } catch (error) {
         alfredClient.error(error)
     }
