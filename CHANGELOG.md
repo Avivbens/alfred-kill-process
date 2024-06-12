@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/Avivbens/alfred-kill-process/compare/v1.2.1...v1.2.2) (2024-06-12)
+
+
+### Bug Fixes
+
+* migrate `ports` logic to `occupied-ports` library 🚀 ([cea0559](https://github.com/Avivbens/alfred-kill-process/commit/cea05595e857b3e29800143ed2409ee44c42129c))
+
 ## [1.2.1](https://github.com/Avivbens/alfred-kill-process/compare/v1.2.0...v1.2.1) (2024-06-11)
 
 
