@@ -12,7 +12,6 @@ import { searchProcess } from '@services/search.service.js'
 
     try {
         const processes = await psList()
-        alfredClient.log(JSON.stringify(processes))
 
         const filteredProcesses = await searchProcess(processes, alfredClient.input, sliceAmount)
 
