@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/Avivbens/alfred-kill-process/compare/v1.2.2...v1.2.3) (2024-06-12)
+
+
+### Bug Fixes
+
+* remove log for finding processes ([2c661d0](https://github.com/Avivbens/alfred-kill-process/commit/2c661d04cf9fce6768c9f3d3b052d292fc975008))
+
 ## [1.2.2](https://github.com/Avivbens/alfred-kill-process/compare/v1.2.1...v1.2.2) (2024-06-12)
 
 
