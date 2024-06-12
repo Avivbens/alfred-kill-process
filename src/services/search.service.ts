@@ -1,6 +1,6 @@
 import Fuse from 'fuse.js/min-basic'
+import type { Port } from 'occupied-ports'
 import type { ProcessDescriptor } from 'ps-list'
-import type { PortSearch } from '@models/ports-search.model.js'
 import { SEARCH_PORT_FIELDS_CONFIG, SEARCH_PROCESS_FIELDS_CONFIG } from './search.config.js'
 
 export async function searchProcess(
@@ -20,8 +20,8 @@ export async function searchProcess(
     return res.map((item) => item.item)
 }
 
-export async function searchPort(processes: PortSearch[], searchTerm: string, limit: number) {
-    const fuse = new Fuse(processes, {
+export async function searchPort(ports: Port[], searchTerm: string, limit: number) {
+    const fuse = new Fuse(ports, {
         keys: SEARCH_PORT_FIELDS_CONFIG,
         isCaseSensitive: false,
         shouldSort: true,

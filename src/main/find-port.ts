@@ -1,8 +1,8 @@
 import type { AlfredScriptFilter } from 'fast-alfred'
 import { FastAlfred } from 'fast-alfred'
+import { getPorts } from 'occupied-ports'
 import { Variables } from '@common/variables.js'
 import type { CallbackPayload } from '@models/callback-payload.model.js'
-import { getPorts } from '@services/port.service.js'
 import { searchPort } from '@services/search.service.js'
 
 ;(async () => {
