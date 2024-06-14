@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/Avivbens/alfred-kill-process/compare/v1.2.3...v1.2.4) (2024-06-14)
+
+
+### Bug Fixes
+
+* bump-up `fast-alfred`, align to Alfred best-practices ([2d2a07a](https://github.com/Avivbens/alfred-kill-process/commit/2d2a07abb2cce1d991db7753ed0d9eca27bb6ca9))
+
 ## [1.2.3](https://github.com/Avivbens/alfred-kill-process/compare/v1.2.2...v1.2.3) (2024-06-12)
 
 
