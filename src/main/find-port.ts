@@ -10,10 +10,15 @@ import { searchPort } from '@services/search.service.js'
 
     const sliceAmount: number = alfredClient.env.getEnv(Variables.SLICE_AMOUNT, { defaultValue: 10, parser: Number })
 
+    const fuzzyThreshold: number = alfredClient.env.getEnv(Variables.FUZZY_THRESHOLD, {
+        defaultValue: 0.6,
+        parser: (input) => Number(input) / 10,
+    })
+
     try {
         const ports = await getPorts()
 
-        const filteredPorts = await searchPort(ports, alfredClient.input, sliceAmount)
+        const filteredPorts = await searchPort(ports, alfredClient.input, sliceAmount, fuzzyThreshold)
 
         const items: AlfredScriptFilter['items'] = filteredPorts.map(({ name, pid, port }) => {
             const subtitle = `Port: ${port} | PID: ${pid}`

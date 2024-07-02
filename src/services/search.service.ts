@@ -7,12 +7,13 @@ export async function searchProcess(
     processes: ProcessDescriptor[],
     searchTerm: string,
     limit: number,
+    threshold: number,
 ): Promise<ProcessDescriptor[]> {
     const fuse = new Fuse(processes, {
         keys: SEARCH_PROCESS_FIELDS_CONFIG,
         isCaseSensitive: false,
         shouldSort: true,
-        threshold: 0.4,
+        threshold,
     })
 
     const res = fuse.search(searchTerm, { limit })
@@ -20,12 +21,12 @@ export async function searchProcess(
     return res.map((item) => item.item)
 }
 
-export async function searchPort(ports: Port[], searchTerm: string, limit: number) {
+export async function searchPort(ports: Port[], searchTerm: string, limit: number, threshold: number) {
     const fuse = new Fuse(ports, {
         keys: SEARCH_PORT_FIELDS_CONFIG,
         isCaseSensitive: false,
         shouldSort: true,
-        threshold: 0.6,
+        threshold,
     })
 
     const res = fuse.search(searchTerm, { limit })

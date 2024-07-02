@@ -10,10 +10,15 @@ import { searchProcess } from '@services/search.service.js'
 
     const sliceAmount: number = alfredClient.env.getEnv(Variables.SLICE_AMOUNT, { defaultValue: 10, parser: Number })
 
+    const fuzzyThreshold: number = alfredClient.env.getEnv(Variables.FUZZY_THRESHOLD, {
+        defaultValue: 0.4,
+        parser: (input) => Number(input) / 10,
+    })
+
     try {
         const processes = await psList()
 
-        const filteredProcesses = await searchProcess(processes, alfredClient.input, sliceAmount)
+        const filteredProcesses = await searchProcess(processes, alfredClient.input, sliceAmount, fuzzyThreshold)
 
         const items: AlfredScriptFilter['items'] = filteredProcesses.map(({ name, pid, cmd }) => {
             const subtitle = `PID: ${pid} | CMD: ${cmd}`
