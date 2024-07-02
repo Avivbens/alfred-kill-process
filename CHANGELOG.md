@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Avivbens/alfred-kill-process/compare/v1.2.4...v1.3.0) (2024-07-02)
+
+
+### Features
+
+* support dynamic fuzzy threshold ([1b10420](https://github.com/Avivbens/alfred-kill-process/commit/1b10420ea6d6f9aa2f98bb990c50c777e1462e2c))
+
 ## [1.2.4](https://github.com/Avivbens/alfred-kill-process/compare/v1.2.3...v1.2.4) (2024-06-14)
 
 
